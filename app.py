@@ -7,6 +7,8 @@ app=Flask(__name__)
 app.secret_key='arjun'
 api=Api(app)
 
+
+
 api.add_resource(Vehicle,'/vehicle/<string:name>')
 
 if __name__=='__main__':
